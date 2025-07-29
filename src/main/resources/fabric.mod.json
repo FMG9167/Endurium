@@ -1,0 +1,35 @@
+{
+  "schemaVersion": 1,
+  "id": "endurium",
+  "version": "${version}",
+  "name": "endurium",
+  "description": "",
+  "authors": [],
+  "contact": {},
+  "license": "All-Rights-Reserved",
+  "icon": "assets/endurium/textures/item/ender_dust.png",
+  "environment": "*",
+  "entrypoints": {
+    "fabric-datagen": [
+      "io.github.FMG9167.endurium.client.EnduriumDataGenerator"
+    ],
+    "client": [
+      "io.github.FMG9167.endurium.client.EnduriumClient"
+    ],
+    "main": [
+      "io.github.FMG9167.endurium.Endurium"
+    ]
+  },
+  "mixins": [
+    "endurium.mixins.json",
+    {
+      "config": "endurium.client.mixins.json",
+      "environment": "client"
+    }
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric": "*",
+    "minecraft": "${minecraft_version}"
+  }
+}
