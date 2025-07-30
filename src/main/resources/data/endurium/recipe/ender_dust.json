@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    "endurium:mortar",
+    "minecraft:ender_pearl"
+  ],
+  "result": {
+    "id": "endurium:ender_dust",
+    "count": 1
+  }
+}

@@ -1,4 +1,7 @@
 {
   "item.endurium.ender_dust": "Ender Dust",
-  "item.endurium.mortar": "Mortar"
+  "item.endurium.mortar": "Mortar",
+  "item.endurium.ingot_mold": "Ingot Mold",
+  "item.endurium.endurium_dust": "Endurium Dust",
+  "item.endurium.endurium_ingot": "Endurium Ingot"
 }

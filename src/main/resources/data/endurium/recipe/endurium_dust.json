@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "ENE",
+    "DMD",
+    "ENE"
+  ],
+  "key": {
+    "E": "endurium:ender_dust",
+    "N": "minecraft:netherite_ingot",
+    "D": "minecraft:diamond",
+    "M": "endurium:ingot_mold"
+  },
+  "result": {
+    "id": "endurium:endurium_dust",
+    "count": 2
+  }
+}

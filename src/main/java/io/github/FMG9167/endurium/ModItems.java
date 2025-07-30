@@ -8,6 +8,7 @@ import net.minecraft.registry.Registry;
 import net.minecraft.registry.RegistryKey;
 import net.minecraft.registry.RegistryKeys;
 import net.minecraft.util.Identifier;
+import net.minecraft.util.Rarity;
 
 import java.util.function.Function;
 
@@ -20,11 +21,20 @@ public class ModItems {
     }
 
     public static final Item ENDER_DUST = register("ender_dust", Item::new, new Item.Settings());
-    public static final Item MORTAR = register(("mortar"), Item::new, new Item.Settings());
+    public static final Item MORTAR = register(("mortar"), Item::new, new Item.Settings().maxCount(1));
+    public static final Item INGOT_MOLD = register("ingot_mold", Item::new, new Item.Settings());
+    public static final Item ENDURIUM_DUST = register("endurium_dust", Item::new, new Item.Settings().rarity(Rarity.UNCOMMON));
+    public static final Item ENDURIUM_INGOT = register("endurium_ingot", Item::new, new Item.Settings().rarity(Rarity.RARE).fireproof());
 
     public static void initialize() {
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.INGREDIENTS)
                 .register((itemGroup) -> itemGroup.add(ModItems.ENDER_DUST));
+        ItemGroupEvents.modifyEntriesEvent(ItemGroups.INGREDIENTS)
+                .register((itemGroup) -> itemGroup.add(ModItems.INGOT_MOLD));
+        ItemGroupEvents.modifyEntriesEvent(ItemGroups.INGREDIENTS)
+                .register((itemGroup) -> itemGroup.add(ModItems.ENDURIUM_DUST));
+        ItemGroupEvents.modifyEntriesEvent(ItemGroups.INGREDIENTS)
+                        .register((itemGroup) -> itemGroup.add(ModItems.ENDURIUM_INGOT));
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.TOOLS)
                 .register((itemGroup) -> itemGroup.add(ModItems.MORTAR));
     }
