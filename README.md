@@ -1,2 +1,2 @@
 # Endurium
-A Fabric mod which expands bows with stuff from the end
+A Fabric mod which expands tools, weapons and armors from the end
