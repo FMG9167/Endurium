@@ -3,5 +3,9 @@
   "item.endurium.mortar": "Mortar",
   "item.endurium.ingot_mold": "Ingot Mold",
   "item.endurium.endurium_dust": "Endurium Dust",
-  "item.endurium.endurium_ingot": "Endurium Ingot"
+  "item.endurium.endurium_ingot": "Endurium Ingot",
+  "item.endurium.endurium_helmet": "Endurium Helmet",
+  "item.endurium.endurium_chestplate": "Endurium Chestplate",
+  "item.endurium.endurium_leggings": "Endurium Leggings",
+  "item.endurium.endurium_boots": "Endurium Boots"
 }

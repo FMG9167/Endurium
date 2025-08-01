@@ -8,6 +8,7 @@ public class Endurium implements ModInitializer {
 
     @Override
     public void onInitialize() {
+        ModArmorMaterials.initialize();
         ModItems.initialize();
     }
 }
